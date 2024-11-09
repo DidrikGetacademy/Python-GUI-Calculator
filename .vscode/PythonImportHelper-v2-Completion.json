@@ -1,0 +1,187 @@
+[
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "Calculator_logic",
+        "description": "Calculator_logic",
+        "isExtraImport": true,
+        "detail": "Calculator_logic",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "importPath": "Calculator_logic",
+        "description": "Calculator_logic",
+        "isExtraImport": true,
+        "detail": "Calculator_logic",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "importPath": "Calculator_logic",
+        "description": "Calculator_logic",
+        "isExtraImport": true,
+        "detail": "Calculator_logic",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "importPath": "Calculator_logic",
+        "description": "Calculator_logic",
+        "isExtraImport": true,
+        "detail": "Calculator_logic",
+        "documentation": {}
+    },
+    {
+        "label": "caulculate",
+        "kind": 2,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "def caulculate():\n    try:\n        num1 = float(entry1.get())\n        num2 = float(entry2.get())\n        operation = operation_var.get()\n        if operation == \"+\":\n            result = add(num1, num2)\n        elif operation == \"-\":\n            result = subtract(num1, num2)\n        elif operation == \"*\":",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "root = tk.Tk()\nroot.title(\"Calculator GUI\")\nwindow_height = 400\nwindow_width = 400\nroot.geometry(f\"{window_height}x{window_width}\")\nscreen_width= root.winfo_screenwidth()\nscreen_height= root.winfo_height()\nx_position = (screen_width // 2) - (window_width // 2)\ny_position = (screen_height // 2) - (window_height // 2)\nroot.geometry(f\"{window_height}x{window_width}+{x_position}+{y_position}\")",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "window_height",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "window_height = 400\nwindow_width = 400\nroot.geometry(f\"{window_height}x{window_width}\")\nscreen_width= root.winfo_screenwidth()\nscreen_height= root.winfo_height()\nx_position = (screen_width // 2) - (window_width // 2)\ny_position = (screen_height // 2) - (window_height // 2)\nroot.geometry(f\"{window_height}x{window_width}+{x_position}+{y_position}\")\n# input fields and layout\nentry1 = tk.Entry(root)",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "window_width",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "window_width = 400\nroot.geometry(f\"{window_height}x{window_width}\")\nscreen_width= root.winfo_screenwidth()\nscreen_height= root.winfo_height()\nx_position = (screen_width // 2) - (window_width // 2)\ny_position = (screen_height // 2) - (window_height // 2)\nroot.geometry(f\"{window_height}x{window_width}+{x_position}+{y_position}\")\n# input fields and layout\nentry1 = tk.Entry(root)\nentry1.grid(row=0, column=1)",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "x_position",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "x_position = (screen_width // 2) - (window_width // 2)\ny_position = (screen_height // 2) - (window_height // 2)\nroot.geometry(f\"{window_height}x{window_width}+{x_position}+{y_position}\")\n# input fields and layout\nentry1 = tk.Entry(root)\nentry1.grid(row=0, column=1)\nentry2 = tk.Entry(root)\nentry2.grid(row=1, column=1)\noperation_var = tk.StringVar(root)\noperation_var.set(\"+\")",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "y_position",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "y_position = (screen_height // 2) - (window_height // 2)\nroot.geometry(f\"{window_height}x{window_width}+{x_position}+{y_position}\")\n# input fields and layout\nentry1 = tk.Entry(root)\nentry1.grid(row=0, column=1)\nentry2 = tk.Entry(root)\nentry2.grid(row=1, column=1)\noperation_var = tk.StringVar(root)\noperation_var.set(\"+\")\noperation_menu = tk.OptionMenu(root, operation_var, \"+\", \"-\", \"*\", \"/\")",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "entry1",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "entry1 = tk.Entry(root)\nentry1.grid(row=0, column=1)\nentry2 = tk.Entry(root)\nentry2.grid(row=1, column=1)\noperation_var = tk.StringVar(root)\noperation_var.set(\"+\")\noperation_menu = tk.OptionMenu(root, operation_var, \"+\", \"-\", \"*\", \"/\")\noperation_menu.grid(row=2, column=1)\ncaulculate_button = tk.Button(root, text=\"Calculate\", command=caulculate)\ncaulculate_button.grid(row=3, column=1)",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "entry2",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "entry2 = tk.Entry(root)\nentry2.grid(row=1, column=1)\noperation_var = tk.StringVar(root)\noperation_var.set(\"+\")\noperation_menu = tk.OptionMenu(root, operation_var, \"+\", \"-\", \"*\", \"/\")\noperation_menu.grid(row=2, column=1)\ncaulculate_button = tk.Button(root, text=\"Calculate\", command=caulculate)\ncaulculate_button.grid(row=3, column=1)\nresult_label = tk.Label(root, text=\"Result:\")\nresult_label.grid(row=4, column=1)",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "operation_var",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "operation_var = tk.StringVar(root)\noperation_var.set(\"+\")\noperation_menu = tk.OptionMenu(root, operation_var, \"+\", \"-\", \"*\", \"/\")\noperation_menu.grid(row=2, column=1)\ncaulculate_button = tk.Button(root, text=\"Calculate\", command=caulculate)\ncaulculate_button.grid(row=3, column=1)\nresult_label = tk.Label(root, text=\"Result:\")\nresult_label.grid(row=4, column=1)\nroot.mainloop()",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "operation_menu",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "operation_menu = tk.OptionMenu(root, operation_var, \"+\", \"-\", \"*\", \"/\")\noperation_menu.grid(row=2, column=1)\ncaulculate_button = tk.Button(root, text=\"Calculate\", command=caulculate)\ncaulculate_button.grid(row=3, column=1)\nresult_label = tk.Label(root, text=\"Result:\")\nresult_label.grid(row=4, column=1)\nroot.mainloop()",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "caulculate_button",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "caulculate_button = tk.Button(root, text=\"Calculate\", command=caulculate)\ncaulculate_button.grid(row=3, column=1)\nresult_label = tk.Label(root, text=\"Result:\")\nresult_label.grid(row=4, column=1)\nroot.mainloop()",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "result_label",
+        "kind": 5,
+        "importPath": "Calculator_GUI",
+        "description": "Calculator_GUI",
+        "peekOfCode": "result_label = tk.Label(root, text=\"Result:\")\nresult_label.grid(row=4, column=1)\nroot.mainloop()",
+        "detail": "Calculator_GUI",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "Calculator_logic",
+        "description": "Calculator_logic",
+        "peekOfCode": "def add(a,b):\n    return a + b\ndef subtract(a,b):\n    return a - b\ndef multiply(a,b):\n    return a * b\ndef divide(a,b):\n    if b != 0:\n        return a / b\n    else: return \"ERROR!: Division by zero\"",
+        "detail": "Calculator_logic",
+        "documentation": {}
+    },
+    {
+        "label": "subtract",
+        "kind": 2,
+        "importPath": "Calculator_logic",
+        "description": "Calculator_logic",
+        "peekOfCode": "def subtract(a,b):\n    return a - b\ndef multiply(a,b):\n    return a * b\ndef divide(a,b):\n    if b != 0:\n        return a / b\n    else: return \"ERROR!: Division by zero\"",
+        "detail": "Calculator_logic",
+        "documentation": {}
+    },
+    {
+        "label": "multiply",
+        "kind": 2,
+        "importPath": "Calculator_logic",
+        "description": "Calculator_logic",
+        "peekOfCode": "def multiply(a,b):\n    return a * b\ndef divide(a,b):\n    if b != 0:\n        return a / b\n    else: return \"ERROR!: Division by zero\"",
+        "detail": "Calculator_logic",
+        "documentation": {}
+    },
+    {
+        "label": "divide",
+        "kind": 2,
+        "importPath": "Calculator_logic",
+        "description": "Calculator_logic",
+        "peekOfCode": "def divide(a,b):\n    if b != 0:\n        return a / b\n    else: return \"ERROR!: Division by zero\"",
+        "detail": "Calculator_logic",
+        "documentation": {}
+    }
+]
